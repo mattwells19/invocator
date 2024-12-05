@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  height: 100vh;
+  background-color: #8492a6;
+}
+
+main > section {
+  flex: 1;
+  background-color: #273444;
+  padding: 8px;
+}
+
+.request_url_section {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: x-large;
+}
+
+div.form_control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.request_url_section > div:has(input[type="text"]) {
+  flex: 1;
+}
+
+label {
+  font-size: small;
+  color: white;
+}
+
+select, textarea, input[type="text"] {
+  font-size: large;
+  padding: 4px 12px;
+}
+
+button[type="submit"] {
+  padding: 4px 12px;
+  font-size: x-large;
+}
+
+section.response {
+  color: white;
+  overflow-y: auto;
+  font-size: large;
+}
